@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>server</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./public/js/h_index.js"></script>
+
+</head>
+<body>
+
+<div id="message">asd</div>
+
+<!-- 리스트 -->
+<div id="menu">
+    <span class="material-icons" onclick="toggle(['#test_button','#login_button','#logout_button','#user_info_button'])">menu</span>
+    <button id="test_button" type="button" value="test value" data-url="/test" onclick="send(this)">테스트</button>
+    <button id="login_button" type="button" data-url="/auth/kakao" onclick="get(this)">로그인</button>
+    <button id="logout_button" data-url="/auth/logout" type="button" onclick="get(this)">로그아웃</button>
+    <button id="user_info_button" data-url="/user/me" type="button" onclick="send(this)">내정보</button>
+</div>
+
+
+
+
+</body>
+</html>

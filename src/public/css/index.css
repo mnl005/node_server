@@ -1,0 +1,64 @@
+/* css 리셋 ---------------------------------------------------------------------------------------------------*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color:white;
+    font-size: clamp(20px, 1.8vw + 3%, 35px);
+    color:black;
+    text-align: center;
+    /*border-style:none;*/
+    /*border:1px solid red;*/
+}
+
+/* 요소 제어 ---------------------------------------------------------------------------------------------------*/
+#test_button,#login_button,#logout_button,#user_info_button{
+    display: none;
+}
+
+/* 기본 설정 ---------------------------------------------------------------------------------------------------*/
+.material-icons, button {
+    display: inline-block; /* 아이콘/버튼을 블록처럼 표시 */
+    width: 100%; /* 너비 설정 */
+    font-size: 36px; /* 아이콘 크기 */
+    color: #333; /* 기본 텍스트 색상 */
+    cursor: pointer; /* 클릭 가능한 커서 */
+    padding: 15px 20px; /* 여유로운 내부 여백 */
+    border: none; /* 기본 버튼 테두리 제거 */
+    background: linear-gradient(145deg, #f0f0f0, #d9d9d9); /* 부드러운 배경 그라데이션 */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.8); /* 입체감 */
+    transition: all 0.3s ease; /* 부드러운 전환 효과 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+/* 호버 효과 */
+.material-icons:hover, button:hover {
+    color: #fff; /* 텍스트 색상 변경 */
+    background: linear-gradient(145deg, #555, #666); /* 어두운 배경 그라데이션 */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4), -4px -4px 12px rgba(0, 0, 0, 0.2); /* 그림자 강조 */
+}
+
+/* 클릭 효과 */
+.material-icons:active, button:active {
+    background: linear-gradient(145deg, #333, #444); /* 더 어두운 배경 */
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.5), inset -4px -4px 8px rgba(0, 0, 0, 0.2); /* 눌린 효과 */
+    transform: scale(0.95); /* 클릭 시 살짝 축소 */
+}
+
+/* 버튼/아이콘 텍스트 스타일 */
+button {
+    font-size: 18px; /* 텍스트 크기 */
+    font-weight: bold; /* 텍스트 강조 */
+    text-transform: uppercase; /* 텍스트 대문자 */
+    letter-spacing: 1px; /* 텍스트 간격 */
+}
+#message {
+    background-color: cadetblue;
+    padding:10px;
+    font-weight: bold;
+    color:white;
+    display: none;
+}
+
+
+
